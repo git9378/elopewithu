@@ -1,1 +1,27 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Elope With U</title><link href=/static/css/app.bba7e0db229adf98d5c9017f118e87db.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.a3e35cbf816a848c2b6e.js></script><script type=text/javascript src=/static/js/app.cbf58f8982ad2a225d45.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Elope With U</title><link href=//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet><link rel=stylesheet type=text/css href=src/assets/css/normallize.css rel="external nofollow"><script>(function (win) {
+      // 不能用ES6
+      var docEl = win.document.documentElement
+      var tid
+
+      function refreshRem() {
+        var width = docEl.getBoundingClientRect().width
+        if (width > 468) {
+          width = 468
+        }
+        var rem = width / 3.75
+        docEl.style.fontSize = rem + 'px'
+      }
+
+      function dbcRefresh() {
+        clearTimeout(tid)
+        tid = setTimeout(refreshRem, 100)
+      }
+
+      win.addEventListener('resize', function () {
+        dbcRefresh()
+      }, false)
+      win.addEventListener('pageshow', function (e) {
+        dbcRefresh()
+      }, false)
+      refreshRem()
+    })(window)</script><link href=/static/css/app.e6abaeef25ffef91334d6150bc2dc74a.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.c03f56b8b37bc444d594.js></script><script type=text/javascript src=/static/js/app.ab91399c5a9a6f80e479.js></script></body></html>
